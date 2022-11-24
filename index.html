@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Counter Timer</title>
+  </head>
+  <body>
+    <div>
+      <div class="timer">00:00:00</div>
+      <button class="start">Start</button>
+      <button class="stop">Pause</button>
+      <button class="reset">Reset</button>
+    </div>
+    <!-- <div class="divider" /> -->
+    <div class="timer">
+      <input class="timer__counter" value="00:00:00" type="time" step="2" />
+      <button class="start_timer">Start</button>
+    </div>
+    <div class="base-timer">
+      <svg
+        class="base-timer__svg"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g class="base-timer__circle">
+          <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />
+          <path
+            id="base-timer-path-remaining"
+            class="base-timer__path-remaining normal"
+            d="
+          M 50, 50
+          m -45, 0
+          a 45,45 0 1,0 90,0
+          a 45,45 0 1,0 -90,0
+        "
+          ></path>
+        </g>
+      </svg>
+      <span class="remaining-time"> 00:00:00</span>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

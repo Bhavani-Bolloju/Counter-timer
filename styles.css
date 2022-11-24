@@ -1,0 +1,105 @@
+body {
+  color: #eee;
+
+  background-color: rgb(50, 49, 49);
+  text-align: center;
+  padding: 50px 100px;
+  min-height: 100vh;
+}
+
+.timer {
+  margin-top: 20px;
+  font-size: 100px;
+}
+
+button {
+  font-size: 30px;
+  padding: 10px 20px;
+}
+
+.divider {
+  width: 100%;
+  height: 10px;
+  background: white;
+}
+
+.timer__counter {
+  height: 50px;
+  font-size: 40px;
+}
+
+.base-timer {
+  width: 280px;
+  height: 280px;
+  position: relative;
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 10px;
+  stroke: grey;
+}
+
+.remaining-time {
+  position: absolute;
+  left: 50%;
+  font-size: 1.8rem;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.normal {
+  stroke: rgb(15, 249, 144);
+}
+
+.warning {
+  stroke: rgb(247, 188, 79);
+}
+
+.alert {
+  stroke: rgb(238, 66, 66);
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform-origin: center;
+  transform: rotate(90deg);
+  transition: 1s linear all;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+/* .circle {
+
+}
+
+.circle svg {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 0;
+  top: 0;
+} */
+
+/* .display_time {
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.start_time {
+  width: 300px;
+  height: 300px;
+  background-color: yellow;
+  border-radius: 50%;
+  transform: scaleX(0);
+} */
