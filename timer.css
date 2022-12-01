@@ -1,0 +1,98 @@
+header {
+  background: #5cf6b196;
+  padding: 1rem 0;
+}
+
+#timerwatch {
+  height: 70vh;
+  gap: 2rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.list li {
+  list-style: none;
+}
+
+.list li a {
+  text-decoration: none;
+  color: #6d1929;
+}
+
+.hidden {
+  display: none;
+}
+
+.base-timer {
+  position: relative;
+  height: 250px;
+  width: 250px;
+}
+
+.base-timer__circle {
+  fill: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 8px;
+  stroke: #c4c4c4;
+}
+
+.remaining-time {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timer__counter {
+  font-size: 1.8rem;
+}
+
+.counter {
+  font-size: 2.5rem;
+}
+
+.base-timer__path-remaining {
+  stroke: #55b674;
+  height: 250px;
+  width: 250px;
+  stroke-width: 8px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transition: all 1s linear;
+  transform-origin: center;
+}
+
+.alert {
+  stroke: orange;
+}
+.warning {
+  stroke: red;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.timer-btns button {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.timer-btns {
+  gap: 1rem;
+  display: flex;
+}

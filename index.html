@@ -8,39 +8,43 @@
     <title>Counter Timer</title>
   </head>
   <body>
-    <div>
-      <div class="timer">00:00:00</div>
-      <button class="start">Start</button>
-      <button class="stop">Pause</button>
-      <button class="reset">Reset</button>
-    </div>
-    <!-- <div class="divider" /> -->
-    <div class="timer">
-      <input class="timer__counter" value="00:00:00" type="time" step="2" />
-      <button class="start_timer">Start</button>
-    </div>
-    <div class="base-timer">
-      <svg
-        class="base-timer__svg"
-        viewBox="0 0 100 100"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g class="base-timer__circle">
-          <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />
-          <path
-            id="base-timer-path-remaining"
-            class="base-timer__path-remaining normal"
-            d="
-          M 50, 50
-          m -45, 0
-          a 45,45 0 1,0 90,0
-          a 45,45 0 1,0 -90,0
-        "
-          ></path>
-        </g>
-      </svg>
-      <span class="remaining-time"> 00:00:00</span>
-    </div>
+    <header>
+      <ul class="list">
+        <li><a href="#stopwatch">Stop Watch</a></li>
+        <li><a href="timer.html">Timer</a></li>
+      </ul>
+    </header>
+    <section class="timer" id="stopwatch">
+      <h1>Stop Watch</h1>
+      <div class="timer__text">
+        <span class="time timer__text-hours">
+          <span class="hrs">
+            <span class="tens hrs_tens">0</span>
+            <span class="ones hrs_ones">0</span>
+          </span>
+        </span>
+        <span class="separate">:</span>
+        <span class="time timer__text-mins">
+          <span class="mins">
+            <span class="tens mins_tens">0</span>
+            <span class="ones mins_ones">0</span>
+          </span>
+        </span>
+        <span class="separate">:</span>
+        <span class="time timer__text-secs">
+          <span class="secs">
+            <span class="tens secs_tens">0</span>
+            <span class="ones secs_ones">0</span>
+          </span>
+        </span>
+      </div>
+      <div class="btns">
+        <button class="timer__start">Start</button>
+
+        <button class="timer__reset">Reset</button>
+      </div>
+    </section>
+
     <script src="/script.js"></script>
   </body>
 </html>
