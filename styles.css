@@ -9,16 +9,21 @@ html {
 }
 
 body {
+  background-image: linear-gradient(#090a00d8, #090a00d3),
+    url("./images/img-1.jpg");
+  background-position: center;
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
   color: black;
   font-size: 1.6rem;
   text-align: center;
-  /* padding: 50px 100px; */
+  color: #d8f1e6;
   min-height: 100vh;
 }
 
 header {
-  background: #5cf6b196;
-  padding: 1rem 0;
+  background: #7cf8c05e;
+  padding: 2rem 0;
 }
 
 #stopwatch {
@@ -28,7 +33,8 @@ header {
 .list {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 10rem;
+  font-size: 1.4rem;
 }
 
 .list li {
@@ -37,29 +43,20 @@ header {
 
 .list li a {
   text-transform: uppercase;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: inherit;
   text-decoration: none;
   color: inherit;
 }
 
 h1 {
-  font-size: 3rem;
+  /* font-size: 3rem; */
   text-transform: uppercase;
-  background: linear-gradient(#00894c, #6d1929);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 h2 {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  background: linear-gradient(#00894c, #6d1929);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  /* font-size: 2.5rem; */
   margin: 2rem 0;
 }
 
@@ -74,6 +71,7 @@ h2 {
 .timer__text {
   font-size: 12rem;
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 1.8rem;
   font-weight: bold;
@@ -86,8 +84,7 @@ h2 {
 
 .time::before {
   display: block;
-  font-size: 2.5rem;
-  color: #6d1929;
+  font-size: 1.6rem;
   position: absolute;
   z-index: 10;
   top: -2.5rem;
@@ -105,8 +102,8 @@ h2 {
 }
 
 .separate {
-  font-size: 10rem;
-  color: black;
+  font-size: 6rem;
+  /* color: black; */
 }
 
 .btns {
@@ -120,7 +117,7 @@ button {
   padding: 10px 20px;
   border-radius: 1rem;
   background-color: transparent;
-  border: 1px solid #002313;
+  border: 1px solid #d8f1e6;
   color: #00894c;
 }
 
